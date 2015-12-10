@@ -1,0 +1,128 @@
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.ui import Select
+from selenium.common.exceptions import NoSuchElementException
+import unittest, time, re
+
+class CameraOnly(unittest.TestCase):
+    def setUp(self):
+        self.driver = webdriver.Firefox()
+        self.driver.implicitly_wait(30)
+        self.base_url = "https://trials.aminocom.com/"
+        self.verificationErrors = []
+        self.accept_next_alert = True
+    
+    def test_camera_only(self):
+        driver = self.driver
+        driver.get("https://trials.aminocom.com")
+        driver.find_element_by_css_selector("a.new_users_text").click()
+        driver.find_element_by_id("RegAllWizard_StartNavigationTemplateContainerID_btnNext").click()
+        driver.find_element_by_id("RegAllWizard_first_name").clear()
+        driver.find_element_by_id("RegAllWizard_first_name").send_keys("Ray")
+        driver.find_element_by_id("RegAllWizard_last_name").clear()
+        driver.find_element_by_id("RegAllWizard_last_name").send_keys("Res")
+        Select(driver.find_element_by_id("RegAllWizard_country")).select_by_visible_text("US/Canada")
+        driver.find_element_by_xpath(u"//option[@value='001¬^([\\d]{10})$¬¬^([\\d]{5})$|^([\\d]{5}-[\\d]{4})$']").click()
+        Select(driver.find_element_by_id("RegAllWizard_country")).select_by_visible_text("UK")
+        driver.find_element_by_xpath(u"//option[@value='0044¬^07([\\d]{3})[(\\D\\s)]?[\\d]{3}[(\\D\\s)]?[\\d]{3}$¬^((\\(?0[123]\\d{3}\\)?\\s?\\d{3}\\s?\\d{3})|(\\(?0[123]\\d{2}\\)?\\s?\\d{3}\\s?\\d{4})|(\\(?0[123]\\d{2}\\)?\\s?\\d{4}\\s?\\d{4}))$¬^\\D+\\d[\\s]*[\\D\\d]*$']").click()
+        driver.find_element_by_id("RegAllWizard_postcode").clear()
+        driver.find_element_by_id("RegAllWizard_postcode").send_keys("CB24 4UQ")
+        driver.find_element_by_id("RegAllWizard_btnPostcodeSearch").click()
+        Select(driver.find_element_by_id("RegAllWizard_selectAddress")).select_by_visible_text("Amino Communications Ltd, Prospect House Buckingway Business Park")
+        driver.find_element_by_id("RegAllWizard_email").clear()
+        driver.find_element_by_id("RegAllWizard_email").send_keys("rayres@aminocom.com")
+        driver.find_element_by_id("RegAllWizard_email2").clear()
+        driver.find_element_by_id("RegAllWizard_email2").send_keys("rayres@aminocom.com")
+        driver.find_element_by_id("RegAllWizard_username").clear()
+        driver.find_element_by_id("RegAllWizard_username").send_keys("rayres-trials1")
+        driver.find_element_by_id("RegAllWizard_password").clear()
+        driver.find_element_by_id("RegAllWizard_password").send_keys("planet07")
+        driver.find_element_by_id("RegAllWizard_password2").clear()
+        driver.find_element_by_id("RegAllWizard_password2").send_keys("planet07")
+        Select(driver.find_element_by_id("RegAllWizard_question")).select_by_visible_text("Memorable place?")
+        driver.find_element_by_id("RegAllWizard_answer").clear()
+        driver.find_element_by_id("RegAllWizard_answer").send_keys("swavesey")
+        driver.find_element_by_id("RegAllWizard_answer2").clear()
+        driver.find_element_by_id("RegAllWizard_answer2").send_keys("swavesey")
+        driver.find_element_by_id("RegAllWizard_StepNavigationTemplateContainerID_btnNext").click()
+        for i in range(60):
+            try:
+                if self.is_element_present(By.CSS_SELECTOR, "div.margin-bottom40"): break
+            except: pass
+            time.sleep(1)
+        else: self.fail("time out")
+        driver.find_element_by_id("chkGeneralAcceptance").click()
+        driver.find_element_by_id("chkMandatory1").click()
+        driver.find_element_by_id("chkMandatory2").click()
+        driver.find_element_by_id("chkMandatory3").click()
+        driver.find_element_by_id("RegAllWizard_StepNavigationTemplateContainerID_btnNext").click()
+        for i in range(60):
+            try:
+                if self.is_element_present(By.CSS_SELECTOR, "div.massive_tick"): break
+            except: pass
+            time.sleep(1)
+        else: self.fail("time out")
+        driver.find_element_by_id("RegAllWizard_StepNavigationTemplateContainerID_btnNext").click()
+        driver.find_element_by_css_selector("span.bb_cameras.text12").click()
+        driver.find_element_by_id("RegAllWizard_span5").click()
+        driver.find_element_by_id("RegAllWizard_StepNavigationTemplateContainerID_btnNext").click()
+        driver.find_element_by_id("RegAllWizard_StepNavigationTemplateContainerID_btnNext").click()
+        driver.find_element_by_id("RegAllWizard_StepNavigationTemplateContainerID_btnNext").click()
+        driver.find_element_by_id("RegAllWizard_mac1Cam").clear()
+        driver.find_element_by_id("RegAllWizard_mac1Cam").send_keys("D")
+        driver.find_element_by_id("RegAllWizard_mac2Cam").clear()
+        driver.find_element_by_id("RegAllWizard_mac2Cam").send_keys("8")
+        driver.find_element_by_id("RegAllWizard_mac3Cam").clear()
+        driver.find_element_by_id("RegAllWizard_mac3Cam").send_keys("0")
+        driver.find_element_by_id("RegAllWizard_mac4Cam").clear()
+        driver.find_element_by_id("RegAllWizard_mac4Cam").send_keys("3")
+        driver.find_element_by_id("RegAllWizard_mac5Cam").clear()
+        driver.find_element_by_id("RegAllWizard_mac5Cam").send_keys("1")
+        driver.find_element_by_id("RegAllWizard_mac6Cam").clear()
+        driver.find_element_by_id("RegAllWizard_mac6Cam").send_keys("D")
+        driver.find_element_by_id("RegAllWizard_StepNavigationTemplateContainerID_btnNext").click()
+        for i in range(60):
+            try:
+                if self.is_element_present(By.CSS_SELECTOR, "div.massive_tick"): break
+            except: pass
+            time.sleep(1)
+        else: self.fail("time out")
+        driver.find_element_by_id("RegAllWizard_StepNavigationTemplateContainerID_btnNext").click()
+        driver.find_element_by_css_selector("span.bb_tick.text12").click()
+        driver.find_element_by_id("RegAllWizard_StepNavigationTemplateContainerID_btnNext").click()
+        for i in range(60):
+            try:
+                if "Welcome back Ray" == driver.find_element_by_id("ctl00_bodyContent_lblWelcomeBack").text: break
+            except: pass
+            time.sleep(1)
+        else: self.fail("time out")
+        driver.find_element_by_link_text("Logout").click()
+    
+    def is_element_present(self, how, what):
+        try: self.driver.find_element(by=how, value=what)
+        except NoSuchElementException, e: return False
+        return True
+    
+    def is_alert_present(self):
+        try: self.driver.switch_to_alert()
+        except NoAlertPresentException, e: return False
+        return True
+    
+    def close_alert_and_get_its_text(self):
+        try:
+            alert = self.driver.switch_to_alert()
+            alert_text = alert.text
+            if self.accept_next_alert:
+                alert.accept()
+            else:
+                alert.dismiss()
+            return alert_text
+        finally: self.accept_next_alert = True
+    
+    def tearDown(self):
+        self.driver.quit()
+        self.assertEqual([], self.verificationErrors)
+
+if __name__ == "__main__":
+    unittest.main()

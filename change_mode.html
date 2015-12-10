@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://trials.aminocom.com/" />
+<title>login_ide</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">login_ide</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>https://trials.aminocom.com</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>rayreshome</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=userpassword</td>
+	<td>planet07</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=cmdLogin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>id=ctl00_lblLoggedInName</td>
+	<td>rayres</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=ctl00_bodyContent_Literal3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.modalConfirm</td>
+	<td>...Updating Set-Top Box Gateway, please wait...</td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=div.modalConfirm</td>
+	<td>...Updating Set-Top Box Gateway, please wait...</td>
+</tr>
+<tr>
+	<td>storeAttribute</td>
+	<td>id=ctl00_bodyContent_divAlarmOff</td>
+	<td>class=alarm_selected</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=ctl00_bodyContent_Literal2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.modalConfirm</td>
+	<td>...Updating Set-Top Box Gateway, please wait...</td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=div.modalConfirm</td>
+	<td>...Updating Set-Top Box Gateway, please wait...</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>class=alarm_selected</td>
+	<td>Sleeping</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=ctl00_bodyContent_Literal1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.modalConfirm</td>
+	<td>...Updating Set-Top Box Gateway, please wait...</td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=div.modalConfirm</td>
+	<td>...Updating Set-Top Box Gateway, please wait...</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>class=alarm_selected</td>
+	<td>Out</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=ctl00_bodyContent_Literal2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.modalConfirm</td>
+	<td>...Updating Set-Top Box Gateway, please wait...</td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=div.modalConfirm</td>
+	<td>...Updating Set-Top Box Gateway, please wait...</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>class=alarm_selected</td>
+	<td>Sleeping</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=ctl00_bodyContent_Literal3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.modalConfirm</td>
+	<td>...Updating Set-Top Box Gateway, please wait...</td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>css=div.modalConfirm</td>
+	<td>...Updating Set-Top Box Gateway, please wait...</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>class=alarm_selected</td>
+	<td>At Home</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

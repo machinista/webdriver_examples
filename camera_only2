@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://trials.aminocom.com/" />
+<title>camera_only_2</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">camera_only_2</td></tr>
+</thead><tbody>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>https://trials.aminocom.com</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=a.new_users_text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=RegAllWizard_StartNavigationTemplateContainerID_btnNext</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=RegAllWizard_first_name</td>
+	<td>Ray</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=RegAllWizard_last_name</td>
+	<td>Res</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=RegAllWizard_country</td>
+	<td>label=US/Canada</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//option[@value='001¬^([\d]{10})$¬¬^([\d]{5})$|^([\d]{5}-[\d]{4})$']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=RegAllWizard_country</td>
+	<td>label=UK</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//option[@value='0044¬^07([\d]{3})[(\D\s)]?[\d]{3}[(\D\s)]?[\d]{3}$¬^((\(?0[123]\d{3}\)?\s?\d{3}\s?\d{3})|(\(?0[123]\d{2}\)?\s?\d{3}\s?\d{4})|(\(?0[123]\d{2}\)?\s?\d{4}\s?\d{4}))$¬^\D+\d[\s]*[\D\d]*$']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=RegAllWizard_postcode</td>
+	<td>CB24 4UQ</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=RegAllWizard_btnPostcodeSearch</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=RegAllWizard_selectAddress</td>
+	<td>label=Amino Communications Ltd, Prospect House Buckingway Business Park</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=RegAllWizard_email</td>
+	<td>rayres@aminocom.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=RegAllWizard_email2</td>
+	<td>rayres@aminocom.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=RegAllWizard_username</td>
+	<td>rayres-trials6</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=RegAllWizard_password</td>
+	<td>planet07</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=RegAllWizard_password2</td>
+	<td>planet07</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=RegAllWizard_question</td>
+	<td>label=Memorable place?</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=RegAllWizard_answer</td>
+	<td>swavesey</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=RegAllWizard_answer2</td>
+	<td>swavesey</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=RegAllWizard_StepNavigationTemplateContainerID_btnNext</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.margin-bottom40</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=chkGeneralAcceptance</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=chkMandatory1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=chkMandatory2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=chkMandatory3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=RegAllWizard_StepNavigationTemplateContainerID_btnNext</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.massive_tick</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=RegAllWizard_StepNavigationTemplateContainerID_btnNext</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=span.bb_cameras.text12</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=RegAllWizard_span5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=RegAllWizard_StepNavigationTemplateContainerID_btnNext</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=RegAllWizard_StepNavigationTemplateContainerID_btnNext</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=RegAllWizard_StepNavigationTemplateContainerID_btnNext</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=RegAllWizard_mac1Cam</td>
+	<td>D</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=RegAllWizard_mac2Cam</td>
+	<td>7</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=RegAllWizard_mac3Cam</td>
+	<td>F</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=RegAllWizard_mac4Cam</td>
+	<td>F</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=RegAllWizard_mac5Cam</td>
+	<td>7</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=RegAllWizard_mac6Cam</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=RegAllWizard_StepNavigationTemplateContainerID_btnNext</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>180000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.massive_tick</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=RegAllWizard_StepNavigationTemplateContainerID_btnNext</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=span.bb_tick.text12</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=RegAllWizard_StepNavigationTemplateContainerID_btnNext</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>id=ctl00_bodyContent_lblWelcomeBack</td>
+	<td>Welcome back Ray</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

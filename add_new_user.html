@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://trials.aminocom.com/" />
+<title>login_ide</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">login_ide</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>https://trials.aminocom.com</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>rayres</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=userpassword</td>
+	<td>planet07</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=cmdLogin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>id=ctl00_lblLoggedInName</td>
+	<td>rayres</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='main']/div/div/div[2]/div[7]/div/a/b</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h1</td>
+	<td>My Friends</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h2</td>
+	<td>Ray Res</td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/home/ayresfamily/Work/Selenium/intamac/screenshots/add_new_user_before.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ctl00_bodyContent_btnPostCodeSearch</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=#ui-dialog-title-1 &gt; h1</td>
+	<td>Add new friend</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=txtFirstName</td>
+	<td>Ray</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=txtSurname</td>
+	<td>Res2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=txtEmail</td>
+	<td>rayres@aminocom.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=txtEmailConfirm</td>
+	<td>rayres@aminocom.com</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btnFrmFriendSubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//ul[@id='mycarousel']/li[2]/table/tbody/tr[2]/td[2]/div/a/h2</td>
+	<td>Ray Res2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.jqModalDlg.jqModalDlgHeight350 &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=#ui-dialog-title-1 &gt; h1</td>
+	<td>Add/Edit login details</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=txtUsername</td>
+	<td>rayres2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=txtPassword</td>
+	<td>planet07</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=txtSecurityQ</td>
+	<td>fave place</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=txtSecurityA</td>
+	<td>swavesey</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btnFrmLoginUserSubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//ul[@id='mycarousel']/li[2]/table/tbody/tr[2]/td[2]/div/a/h2</td>
+	<td>Ray Res2</td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/home/ayresfamily/Work/Selenium/intamac/screenshots/add_new_user_after.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

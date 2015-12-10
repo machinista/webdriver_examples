@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://trials.aminocom.com/" />
+<title>delete_user</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">delete_user</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>https://trials.aminocom.com</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>rayres</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=userpassword</td>
+	<td>planet07</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=cmdLogin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>id=ctl00_lblLoggedInName</td>
+	<td>rayres</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='main']/div/div/div[2]/div[7]/div/a/b</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h1</td>
+	<td>My Friends</td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/home/ayresfamily/Work/Selenium/intamac/screenshots/delete_user_before.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.btnThin.float-right</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.contentInsidePopup.centredPopupContent</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btnFrmDeleteSubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>...Updating, please wait...</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>...Updating, please wait...</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshotAndWait</td>
+	<td>/home/ayresfamily/Work/Selenium/intamac/screenshots/delete_user_after.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
